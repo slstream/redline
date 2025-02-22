@@ -176,3 +176,7 @@ set grid ytics
 set xtics rotate by 0 font ",8" nomirror
 plot "mydata.txt" using 2:xtic(1) title "aqi current" with boxes lc rgb "blue" ,\
      "" using 3:xtic(1) title "aqi last " with boxes lc rgb "red"
+\\\\\\\\
+set style data histrogram
+plot "mydata.txt" using 2:xtic(1) title "aqi current" with boxes lc rgb "blue" ,\
+     "" using 3 title "aqi last " with boxes lc rgb "red"
